@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="./contact_styles.css">
+    <link rel="stylesheet" href="./media_queries.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <title>Mi Portfolio</title>
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Marvel:ital,wght@0,400;0,700;1,400;1,700&family=Share+Tech+Mono&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="global-wrapper">
+
+        <header class="contact-header">
+
+            <section class="top-section">
+
+                    <nav class="nav-links">
+                        <!-- ul>li*3>a -->
+                            <a href="./index.html">home</a>
+                            <a href="./projects.html">projects</a>
+                            <a href="./contact.html" class="active">contact</a>
+                    </nav> 
+            </section>   
+
+        </header>
+
+        <main>
+
+            
+            
+            <form class="contact-form" action="" method="post"> <!--dentro del formulario todos son de tipo submit, no hace falta ponerlo-->
+                
+                
+
+                <fieldset>
+
+                    <legend class="contact-heading"> Contact </legend>
+
+                    <div  class="contact-fields">
+                        <label for="name"> Name:  </label> <!--Ese for hace que vayamos directamente al input-->
+                        <input type="text" id="name" value="Name"> <!--el valor es lo que se envía, podemos pasar un solo identificador-->
+                    </div>
+
+                    <div  class="contact-fields">
+                        <label for="name"> Email:  </label> 
+                        <input type="email" id="email" value="Email">
+                    </div>
+
+                    <div  class="textarea">
+                        <textarea name="message" rows="5">Message</textarea>
+                    </div>
+                
+                    <button class="contact-button">Submit</button> <!--de momento si no puse a dónde se envía a la barra de la url-->
+
+
+                </fieldset>
+
+            </form>
+            
+            
+        </main>
+
+        <footer>
+            <!--     ul.contanct-list>li.contact-link*2>a--> 
+                <section class="contact-list">
+                    
+                    <a href="https://linkedin.com" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                
+                    <a href="https://github.com">
+                        <i class="fa-brands fa-github" target="_blank"></i>
+                    </a>
+
+                    <a href="https://facebook.com" target="_blank">
+                        <i class="fa-brands fa-square-facebook" target="_blank"></i>
+                    </a>
+                
+                </section>
+
+        </footer>
+
+    </div>
+
+</body>
+</html>
+

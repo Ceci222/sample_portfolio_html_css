@@ -1,0 +1,135 @@
+/* Media query para pantallas pequeñas (móviles) */
+@media (max-width: 767px) {
+
+
+  .index-header {
+      height: 25vh;
+      opacity: 1;
+  }
+
+   
+  .top-headline {
+    font-size: 2em;
+  }
+
+  .index-nav-links { 
+    display: flex;
+    font-size: 1.5em;
+    justify-content: space-evenly;
+    margin-top: 0.5em;
+  }
+  
+  .mid-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mid-section-about-me {
+    margin-top: 1em;
+    order: 1;
+  }
+
+  .mid-section-left {
+    order: 2;
+    margin-top: 1em;
+  }
+
+  .name { 
+    display: none;
+  }
+
+  pre {
+    display: none
+  }
+
+  .about-me-name {
+    display: block;
+    display: flex;
+    justify-content: center;
+    font-family: "Share Tech Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.8em;
+    
+  }
+
+
+  #info_about_me {
+    margin-top: 0.1em;
+    font-size: 1em;
+    display: block;  
+  }
+
+
+  #audio {
+    margin-top: 1em;
+    width: 80%;
+  }
+ 
+
+  .nav-links {
+  display: flex;
+  font-size: 1.5em;
+  justify-content: space-evenly;
+  margin-top: 2.5em;
+  }
+
+  .projects-header {
+  height: 20vh;
+  display: flex;
+  flex-direction: column;    
+  }
+
+  .projects-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  }
+
+  .projects {
+  width: 85%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+  .contact-header {
+    height: 20vh;
+    display: flex;
+    flex-direction: column;    
+  }
+
+  .contact-form {
+    margin-bottom: 2em;
+  }
+
+  fieldset {
+    width: 85%;
+  }
+
+  .contact-fields{
+    width: 100%;
+  }
+
+  textarea{
+    margin-left: 1em;
+    width: 80%;
+  }
+
+  .contact-button {
+    width: 70%;
+  }
+
+  footer {
+    height: auto;
+  }
+
+  
+
+
+  
+
+
+}
+  

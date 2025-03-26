@@ -1,0 +1,185 @@
+:root {
+    --text: #170506;
+    --primary: #11e2d4;
+    --secondary: #82e590;
+    --accent: #07737a;
+    --sombra: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+body {
+    margin: 0;
+    background: linear-gradient(135deg, #dedede 0%, #f2f2f2 100%);
+}
+
+.global-wrapper {
+    display: grid;
+    min-height: 100dvh;
+    grid-template-rows: auto 1fr auto;
+}
+
+.contact-header {
+    background-color: #c9c8c8;
+    height: 15vh;
+}
+
+.nav-links {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 1.5em;
+    font-family: "Share Tech Mono", monospace;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2rem;
+    
+    a {
+        color: var(--accent);
+        text-decoration: none;
+        text-shadow: 2px 2px 2px rgba(192, 192, 192, 0.5); 
+        
+    } 
+
+    a:hover {
+    
+        color: var(--primary);
+        transform: scale(1.1); 
+        
+    } 
+
+}
+
+.active {  
+    border-bottom: 2px solid var(--accent);  
+       
+}
+
+
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 2dvh;
+    width: 100%; 
+
+}
+
+
+.contact-heading {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: var(--text);
+    font-weight: 500;
+    font-size: 2em;
+    color: white;
+    margin-bottom: 2rem;
+    background-color: var(--accent);
+    padding: 0em 0.5em 0em 0.5em;
+    font-family: "Tourney", sans-serif;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-fields {
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;  
+}
+
+
+fieldset {
+    border: 2px solid var(--accent); 
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+.textarea {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+textarea {
+    width: 40%;
+    height: 10rem;
+    margin-left: 4.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-color: var(--primary);
+    margin-bottom: 2rem;
+}
+
+.contact-button {
+    font-family: "Share Tech Mono", monospace;
+    font-weight: 600;
+    display: block;
+    margin-top: 2rem;
+    width: 20%;
+    padding: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: var(--accent);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4rem;
+    border-color: var(--primary);
+
+}
+
+.contact-button:hover{
+    background-color: var(--primary);
+}
+
+
+
+input {
+    width: 40%;
+    margin-left: 2em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-color: var(--primary);
+    height: 2rem;
+}
+
+input:focus {
+    border-color: var(--secondary);
+}
+
+
+.contact-list {
+
+    display: flex; 
+    justify-content: space-evenly;
+    font-size: 3em;
+    
+   
+
+    a {
+        color: var(--secondary);
+        transition: color 0.5s ease;
+        padding: 20px;
+
+    }
+    
+}
+.contact-list a:hover {
+    animation: change-color 0.5s forwards;
+}
+
+
+@keyframes change-color {
+    0% { color: var(--secondary)}
+    100% { color: var(--primary)}
+}
+
+footer {
+    height: 12dvh;
+    background-color: #4d4d4d;
+    margin-bottom: 0;
+}
